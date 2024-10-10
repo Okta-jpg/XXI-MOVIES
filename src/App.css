@@ -1,0 +1,274 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.App-header {
+  padding: 2rem;
+}
+
+.Movie-Container {
+  width: 100%;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  margin-left: -1%;
+}
+
+.Movie-Wrapper {
+  background-color: #272727;
+  border-radius: 8px;
+  padding: 1rem;
+  color: white;
+  border: 1px solid #CBAE81;
+}
+
+
+.Movie-Search {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  background-color: #272727;
+  color: white;
+  border: 1px solid #CBAE81;
+}
+
+.Movie-Title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.Movie-Image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.Movie-Date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.Movie-Rate {
+  font-size: 25px;
+  margin-top: 5%;
+  color: #CBAE81;
+}
+
+.judul{
+  color: #CBAE81;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 3%;
+}
+
+.navbar {
+  background-color: #282c34;
+  padding: 1rem 2rem;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navbar-logo {
+  color: #CBAE81;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 30px;
+}
+
+.nav-link {
+  color: #CBAE81;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #CBAE81;
+}
+
+.App-main {
+  padding: 2rem;
+}
+/* Update existing styles if needed */
+.App-header {
+  min-height: calc(100vh - 80px); 
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #282c34;
+    padding: 1rem;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+
+  .Movie-Search{
+    margin-left: -5%;
+  }
+
+  .Movie-Container{
+    margin-left: -5%;
+  }
+
+  .popup-content{
+    width: 100%;
+  }
+
+  .popup-overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 160%;
+    margin-left: -30%;
+    margin-top: -20px;
+  }
+
+  .close-btn{
+    display: none;
+  }
+
+  .Detail-Syno{
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  .Detail-Director{
+    font-size: 16px;
+  }
+
+  .Detail-Cast{
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .judul{
+    margin-top: 12%;
+  }
+
+
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #272727;
+  padding: 20px;
+  border: 1px solid #CBAE81;
+  border-radius: 8px;
+  margin-top: 8%;
+  max-width: 38%;
+  max-height:100%;
+  color: white;
+  margin-bottom: 5%;
+
+}
+
+.popup-content img {
+  max-width: 50%;
+  height: 50%;
+}
+
+.close-btn {
+  position: absolute;
+  margin-top: -1%;
+  margin-left: 17.8%;
+  font-size:45px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #CBAE81;
+}
+
+.close-btn:hover {
+  color: #fae9cf;
+}
